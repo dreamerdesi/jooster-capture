@@ -1,0 +1,279 @@
+@font-face {
+  font-family: Scandia;
+  src: url(/assets/css/fonts/banana-reg.otf);
+}
+
+body {
+  font-family: Scandia;
+  padding: 0;
+  margin: 0;
+}
+
+.half {
+  width: 50vw;
+  height: 100vh;
+}
+
+.landing {
+  position: relative;
+  z-index: 20000;
+  float: left;
+  background-color: #5be76b;
+  overflow: hidden;
+}
+
+.cta {
+  float: right;
+  background-color: #fff;
+  z-index: 10000;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.cta input {
+  height: 40px;
+  border: none;
+  border-bottom: 1px rgba(151, 151, 151, 0.65) solid;
+  width: 191.5px;
+}
+
+.signup-btn {
+  height: 42px;
+  width: 148px;
+  background: #fff;
+  border: solid 1px #000000;
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+.contact-btn {
+  height: 42px;
+  width: 148px;
+  background: #fff;
+  border: none;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.main-logo {
+  position: absolute;
+  top: 22.5%;
+}
+
+.main-cta {
+  font-size: 30px;
+  padding: 0;
+  line-height: 1.05;
+  width: 360px;
+}
+
+.tagline {
+  margin-top: 30px;
+  font-size: 14px;
+  height: 17px;
+}
+
+.bottomline {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+}
+
+#joinline {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  height: 17px;
+}
+
+ #email {
+   margin-right: 27.5px
+ }
+
+.cloud {
+  position: absolute;
+}
+
+.cloud-one {
+  top: 10.625%;
+  animation: cloudone 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-two {
+  top: 22%;
+  animation: cloudtwo 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-three {
+  top: 30%;
+  animation: cloudthree 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 10%;
+}
+
+.mobile-cta {
+  display: none;
+}
+
+.top-signup-btn {
+  display: none;
+}
+
+.cta-success {
+  background-color: #F4E764;
+  position: absolute;
+  right: 50%;
+  z-index: 15000;
+  -webkit-transition: all 1.5s; // Chrome
+  -moz-transition: all 1.5s; // Mozilla
+  -o-transition: all 1.5s; // Opera
+  transition: all 1.5s;
+}
+
+.success-text {
+  font-size: 33px;
+  width: 300px;
+  position: relative;
+  top: 22.5%;
+}
+
+.success-exit {
+  font-size: 40px;
+  position: absolute;
+  right: 13px;
+  top: 0;
+}
+
+.slidein {
+  right: 0%;
+}
+
+.slideout {
+  right: 50%;
+}
+
+span.customSelect {
+    font:12px sans-serif;
+    background:#fff url(http://i48.tinypic.com/2u7rpec.png) right center no-repeat;
+    border:0;
+    border-bottom: 1px rgba(151, 151, 151, 0.65) solid;
+    padding:7px 9px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px 2px;
+    width:175px;
+    height: 40px;
+    line-height: 3.25;
+    margin-top: 14px;
+}
+
+@keyframes cloudone {
+  from {
+    right: -10%;
+  } to {
+    right: 100%;
+  }
+}
+
+@keyframes cloudtwo {
+  from {
+    left: -10%;
+  } to {
+    left: 100%;
+  }
+}
+
+@keyframes cloudthree {
+  from {
+    right: -30%;
+  } to {
+    right: 120%;
+  }
+}
+
+@media only screen and (min-device-width: 1080px) {
+
+}
+
+
+@media only screen and (max-device-width: 1080px) {
+  .half {
+    width: 100vw;
+  }
+
+  .signup-btn {
+    margin-right: 0;
+  }
+
+  .cta {
+    float: right;
+    background-color: #fff;
+    z-index: 10000;
+    position: relative;
+  }
+
+  .slidein {
+    top: 100vh;
+  }
+
+  .main-cta {
+    font-size: 25px;
+    padding: 0;
+    line-height: 1.05;
+    width: 360px;
+    display: none;
+  }
+
+  .contact-btn {
+    margin-left: 35px;
+  }
+
+  .mobile-cta {
+    color: #fff;
+    line-height: 1.38;
+    font-size: 30px;
+    padding: 0;
+    width: 300px;
+    position: absolute;
+    top: 22.5%;
+    display: block;
+  }
+
+  .main-logo {
+    position: absolute;
+    top: 23px;
+    left: 15px;
+    width: 100px;
+  }
+
+  .top-signup-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 35px;
+    width: 100px;
+    background: transparent;
+    border: solid 1px #000000;
+    font-size: 14px;
+  }
+
+}
